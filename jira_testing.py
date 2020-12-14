@@ -6,8 +6,9 @@ from os.path import dirname
 
 
 # -12 for the name of this project JIRA_Testing
-save_path = dirname(__file__)[ : -12]
-propertiesFolder_path = save_path + "Properties"
+# save_path = dirname(__file__)[ : -12]
+save_path = os.path.dirname(os.path.abspath("__file__"))[ : -12]
+propertiesFolder_path = save_path + "\\"+ "Properties"
 
 t.incidentNumber = "I2008-00972"
 j.sprint = "PNN-TOS-PI2020.3.2"
